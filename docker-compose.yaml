@@ -1,0 +1,21 @@
+version: '3.7'
+services:
+
+  parser:
+    container_name: parser
+    build: ./game_news_parser
+    volumes:
+      - ./game_news_parser/src:/var/www/src
+    ports:
+      - 80:3000
+    # depends_on:
+    #   - redis
+    #   redis:
+    #     image: redis:latest
+    #     ports:
+    #       - '6379:6379'
+    #     volumes:
+    #       - redisStorage:/data
+
+    # volumes:
+    #   redisStorage:
