@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Shkaffez/game_news_parser#readme",
   "dependencies": {
     "docker": "^1.0.0",
+    "mongoose": "^6.2.10",
     "puppeteer": "^13.5.1",
     "redis": "^4.0.6"
   }
